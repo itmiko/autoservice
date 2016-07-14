@@ -138,6 +138,8 @@ header.main_header  h1 {
     padding: 0 20px;
     vertical-align: middle;
     border-bottom: #AC160A 4px solid;
+    color: #fff;
+    font-family: "BebasBold";
 }
 
 header.main_header  .button {
@@ -258,7 +260,7 @@ header.main_header  .button:active {
 
 .main_cats {
 	background-color: #191919;
-	padding: 20px 0 30px 0;
+	padding: 20px 0 40px 0;
 }
 
 .main_cats h2 {
@@ -304,6 +306,7 @@ section h2 {
 .mc_wrap {
 	text-align: center;
 	padding: 0;
+	position: relative;
 	
 }
 
@@ -385,4 +388,52 @@ section h2 {
 .mc_item_wrap:hover .mc_toggle {
 	background-color: #353535;
 	background-position: -118px 10px;
+}
+
+.mc_item_wrap.active > ul {
+
+   margin: 0;//
+}
+
+.mc_item_wrap.active > ul li {
+    display:inline-block;
+    font-family: "BebasRegular";
+}
+
+.mc_wrap .mc_item_wrap > ul{
+    margin-top: 25px;
+    background-color: #353535;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    padding: 15px 0;
+    list-style-type: none;
+    display:none;
+    z-index:10;
+	left:0;
+
+}
+
+.mc_item_wrap.active > ul li a{
+    padding: 0 10px;
+    text-decoration: underline;
+}
+
+.mc_item_wrap.active > ul li a:hover{
+    text-decoration: none;
+}
+
+.mc_item_wrap_af {
+	background-image: url(../img/mc_c_arr.png);
+	width: 22px;
+	height: 12px;
+	content:'';
+	margin: 16px 68px;
+	position: absolute;
+	display:none;
+}
+
+.mc_button_w {
+	text-align: center;
+	margin-top: 10px;
 }
